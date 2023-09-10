@@ -1,0 +1,52 @@
+body{
+    background-color: hsl(218, 23%, 16%);
+font-family: 'Manrope', sans-serif;
+font-weight: 800;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+#Advice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    background-color: hsl(217, 19%, 24%);
+}
+h5{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .9rem;
+}
+p{
+    font-size: 1.3rem;
+}
+.dice{
+    width: 70px;
+    height: 70px;
+    bottom: -40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    display: grid;
+    place-items: center;
+    
+}
+.dice:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 70px 10px hsl(150, 100%, 66%) ;
+}
+@media(max-width:414px){
+    #Advice{
+        width: 330px;
+    }
+
+}
